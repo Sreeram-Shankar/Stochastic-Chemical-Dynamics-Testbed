@@ -1,0 +1,82 @@
+{
+  "CTk": {
+    "fg_color": ["#ffffff", "#0d0d0d"],
+    "text_color": ["#cc5500", "#ffaa66"]
+  },
+
+  "CTkLabel": {
+    "text_color": ["#cc5500", "#ffaa66"],
+    "fg_color": ["#ffffff", "#0d0d0d"],
+    "corner_radius": 0,
+    "border_width": 0
+  },
+
+  "CTkButton": {
+    "fg_color": ["#ffe4cc", "#cc5500"],
+    "hover_color": ["#ffcc99", "#ff6347"],
+    "text_color": ["#cc5500", "#0d0d0d"],
+    "corner_radius": 10,
+    "border_width": 0,
+    "border_color": ["#ffe4cc", "#cc5500"],
+    "text_color_disabled": ["#cc9966", "#996633"]
+  },
+
+  "CTkEntry": {
+    "fg_color": ["#fff5e6", "#1a1a1a"],
+    "text_color": ["#cc5500", "#ffaa66"],
+    "placeholder_text_color": ["#cc9966", "#996633"],
+    "corner_radius": 10,
+    "border_width": 2,
+    "border_color": ["#ff8c42", "#ff6b35"]
+  },
+
+  "CTkOptionMenu": {
+    "fg_color": ["#fff5e6", "#1a1a1a"],
+    "text_color": ["#cc5500", "#ffaa66"],
+    "button_color": ["#ffe4cc", "#cc5500"],
+    "button_hover_color": ["#ffcc99", "#ff6347"],
+    "corner_radius": 10,
+    "border_width": 2,
+    "text_color_disabled": ["#cc9966", "#996633"],
+    "border_color": ["#ff8c42", "#ff6b35"]
+  },
+
+  "CTkFont": {
+    "family": "Times New Roman",
+    "size": 24,
+    "weight": "normal"
+  },
+
+  "DropdownMenu": {
+    "fg_color": ["#fff5e6", "#1a1a1a"],
+    "text_color": ["#cc5500", "#ffaa66"],
+    "hover_color": ["#ffcc99", "#ff6347"],
+    "border_color": ["#ff8c42", "#ff6b35"]
+  },
+
+  "CTkProgressBar": {
+      "corner_radius": 10,
+      "border_width": 0,
+      "fg_color": ["#fff5e6", "#1a1a1a"],
+      "progress_color": ["#ff6347", "#ff8c42"],
+      "border_color": ["#fff5e6", "#1a1a1a"]
+    },
+
+  "CTkToplevel": {
+    "fg_color": ["#ffffff", "#0d0d0d"],
+    "border_color": ["#ff8c42", "#ff6b35"],
+    "corner_radius": 15,
+    "border_width": 2
+  },
+  "CTkSlider": {
+    "button_color": ["#ffe4cc", "#cc5500"],
+    "button_hover_color": ["#ffcc99", "#ff6347"],
+    "progress_color": ["#ff6347", "#ff8c42"],
+    "fg_color": ["#ffe4cc", "#333333"],
+    "corner_radius": 15,
+    "border_width": 0,
+    "border_color": ["#ff8c42", "#ff6b35"],
+    "button_corner_radius": 15,
+    "button_length": 4
+  }
+}
