@@ -193,22 +193,22 @@ This applies to:
 
 ## Repository Structure
 
+```text
 .
-├── cle_frontend.py     # Input handling and experiment orchestration
-├── cle_backend.py      # Core simulation logic (CLE + SSA)
-├── cle_visuals.py      # Analysis and plotting
+├── cle_frontend.py       # Input handling and experiment orchestration
+├── cle_backend.py        # Core simulation logic (CLE + SSA)
+├── cle_visuals.py        # Analysis and plotting
 ├── solvers/
-│   ├── irk.py               # Collocation FIRK
-│   ├── linear_multistep.py  # Adams and BDF Multistep
-│   ├── rk.py                # Explicit RK
-│   ├── sdirk.py             # Singly Diagonally IRK
-│   └── sde.py               # Stochastic integrators
-├── generation/
-│   ├── bdf.py             # BDF Coefficient Generator
-│   ├── gauss_legednre.py  # Gauss-Legendre Generator
-│   ├── lobatto.py         # LobattoIIIC Generator
-│   ├── radau.py           # radauIIA Geneator
-│   └── multistep.py        # Adams Bashforth and Moulton Generator
-
-*Questions, comments, and constructive criticism are welcome.*
+│   ├── irk.py            # Collocation FIRK
+│   ├── linear_multistep.py # Adams and BDF Multistep
+│   ├── rk.py             # Explicit RK
+│   ├── sdirk.py          # Singly Diagonally IRK
+│   └── sde.py            # Stochastic integrators
+└── generation/
+    ├── bdf.py            # BDF Coefficient Generator
+    ├── gauss_legendre.py # Gauss-Legendre Generator (fixed typo)
+    ├── lobatto.py        # LobattoIIIC Generator
+    ├── radau.py          # RadauIIA Generator
+    └── multistep.py      # Adams Bashforth and Moulton Generator
 ```
+*Questions, comments, and constructive criticism are welcome.*
