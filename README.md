@@ -198,6 +198,7 @@ This applies to:
 ├── cle_frontend.py       # Input handling and experiment orchestration
 ├── cle_backend.py        # Core simulation logic (CLE + SSA)
 ├── cle_visuals.py        # Analysis and plotting
+├── theme.json            # Custom GUI theme
 ├── solvers/
 │   ├── irk.py            # Collocation FIRK
 │   ├── linear_multistep.py # Adams and BDF Multistep
