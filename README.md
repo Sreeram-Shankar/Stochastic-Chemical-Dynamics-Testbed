@@ -68,7 +68,7 @@ The framework is general enough to support additional reaction systems, but the 
 - Adams–Moulton
 - BDF methods
 - Singly diagonally implicit Runge–Kutta (SDIRK)
-- Fully implicit Runge–Kutta (Gauss, Radau IIA, Lobatto IIIC)
+- Fully implicit Runge–Kutta (Gauss, Radau IIA, Lobatto IIIA)
 
 All deterministic integrators are implemented as **true step methods**, not restarted solvers.
 
@@ -208,7 +208,7 @@ This applies to:
 └── generation/
     ├── bdf.py            # BDF Coefficient Generator
     ├── gauss_legendre.py # Gauss-Legendre Generator (fixed typo)
-    ├── lobatto.py        # LobattoIIIC Generator
+    ├── lobatto.py        # LobattoIIIA Generator
     ├── radau.py          # RadauIIA Generator
     └── multistep.py      # Adams Bashforth and Moulton Generator
 ```
