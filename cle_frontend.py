@@ -60,7 +60,7 @@ class CLEApp(ctk.CTk):
             ("CLE Initial:", "entry"), ("SSA Initial:", "entry"),
             ("Final Time T:", "entry"), ("Number of Timesteps N:", "entry"), 
             ("Monte Carlo Paths M:", "entry"), ("Global Random Seed:", "entry"),
-            ("Deterministic Integrator Family:", "dropdown", ["Explicit Runge-Kutta", "Adams-Bashforth", "Adams-Moulton", "SDIRK", "BDF", "Gauss-Legendre", "RadauIIA", "LobattoIIIC"]),
+            ("Deterministic Integrator Family:", "dropdown", ["Explicit Runge-Kutta", "Adams-Bashforth", "Adams-Moulton", "SDIRK", "BDF", "Gauss-Legendre", "RadauIIA", "LobattoIIIA"]),
             ("Deterministic Integrator Order:", "entry"),
             ("Stochastic Integrator:", "dropdown", ["Euler–Maruyama", "Milstein", "Tamed Euler", "Balanced / Split-Step Euler"]),
             ("Operator Splitting:", "dropdown", ["Lie", "Strang"])
@@ -164,9 +164,9 @@ class CLEApp(ctk.CTk):
                 if det_order < 2 or det_order > 4:
                     self.main_label.configure(text="SDIRK Order Must be Between 2 and 4")
                     return
-            elif det_family == "LobattoIIIC":
+            elif det_family == "LobattoIIIA":
                 if det_order <= 1:
-                    self.main_label.configure(text="LobattoIIIC Order Must be Greater Than 1")
+                    self.main_label.configure(text="LobattoIIIA Order Must be Greater Than 1")
                     return
 
             #saves the results as class variables
