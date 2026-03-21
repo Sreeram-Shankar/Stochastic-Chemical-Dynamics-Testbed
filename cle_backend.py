@@ -68,7 +68,7 @@ def get_deterministic_integrator_step(det_family: str, det_order: int):
         return lambda f, t, y, h: irk.step_collocation(f, t, y, h, A, b, c)
     
     #gets the LobattoIIC irk step methods
-    elif det_family == "lobattoiiic":
+    elif det_family == "lobattoiiia":
         A, b, c = irk.get_tableau("lobatto", det_order)
         return lambda f, t, y, h: irk.step_collocation(f, t, y, h, A, b, c)
     
