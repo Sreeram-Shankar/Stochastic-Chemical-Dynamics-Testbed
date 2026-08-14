@@ -1,11 +1,11 @@
 # Stochastic Chemical Dynamics Testbed
-*A controlled numerical framework for SSA, CLE, and solver comparison*
+A controlled numerical framework for testing ODE and SDE solvers on a stochastic chemical kinetics system.
 
 ---
 
 ## Overview
 
-This repository contains a numerical framework for simulating and analyzing stochastic chemical reaction dynamics, focused on reproducibility, numerical control, and method comparison.
+This repository contains a numerical framework for simulating and analyzing stochastic chemical reaction dynamics, focused on reproducibility, numerical control and method comparison.
 
 The code implements:
 
@@ -15,7 +15,6 @@ The code implements:
 - A fixed, reproducible randomness architecture
 - An analysis and visualization suite
 
-The goal is to provide a transparent numerical laboratory for studying how modeling and numerical choices affect observed stochastic behavior, rather than to provide the fastest simulator.
 
 ---
 
@@ -23,19 +22,19 @@ The goal is to provide a transparent numerical laboratory for studying how model
 
 Stochastic chemical kinetics involves several layers of approximation:
 
-1. **Physical modeling**
+1. Physical modeling
    - Chemical Master Equation (CME)
    - Diffusion approximations (CLE)
 
-2. **Numerical discretization**
+2. Numerical discretization
    - Deterministic ODE solvers for drift
    - Stochastic integrators for noise
 
-3. **Randomness handling**
+3. Randomness handling
    - Pseudorandom number generation
    - Monte Carlo sampling
 
-Each layer can influence results in subtle and sometimes severe ways. This framework isolates and controls those influences so that observed differences can be attributed to specific numerical or modeling choices rather than uncontrolled randomness.
+Each layer can influence results in subtle and sometimes severe ways. This framework isolates and controls those influences so that observed differences can be attributed to specific numerical or modeling choices
 
 ---
 
@@ -48,10 +47,10 @@ The current implementation focuses on the Schlögl autocatalytic reaction system
 ## Features
 
 ### Stochastic Models
-- **SSA (CME)**
+- SSA (CME)
   - Gillespie Direct Method
   - Exact, event-driven simulation
-- **CLE (SDE)**
+- CLE (SDE)
   - Itô interpretation
   - Multiplicative noise
   - Fixed timestep formulation
@@ -66,7 +65,6 @@ The current implementation focuses on the Schlögl autocatalytic reaction system
 - Singly diagonally implicit Runge–Kutta (SDIRK)
 - Fully implicit Runge–Kutta (Gauss, Radau IIA, Lobatto IIIA)
 
-All deterministic integrators are implemented as true step methods rather than restarted solvers.
 
 ---
 
@@ -76,7 +74,6 @@ All deterministic integrators are implemented as true step methods rather than r
 - Tamed Euler
 - Split-step / balanced Euler
 
-Stochastic integrators consume externally provided noise; they do not generate randomness internally.
 
 ---
 
@@ -114,7 +111,7 @@ A single global seed controls the entire experiment. Independent seeds are deter
 - Switching rate and MFPT comparisons
 - Time-resolved moment comparisons
 
-CLE results are shown immediately; SSA runs separately due to its computational cost.
+CLE results are shown immediatel while SSA runs separately due to its computational cost.
 
 ---
 
@@ -131,11 +128,6 @@ This project prioritizes correctness, reproducibility, transparency, and control
 - SSA performance is limited by the inherent cost of exact simulation
 - No enforcement of physical constraints beyond simple non-negativity
 
----
-
-## Intended Use
-
-This code is suitable for numerical analysis of stochastic chemical systems, studying solver-induced bias and approximation error, reproducible Monte Carlo experiments, and educational or research-focused exploration. It is not a production-grade chemical simulator.
 
 ---
 
@@ -166,5 +158,3 @@ All results are reproducible given identical parameters, identical numerical met
     ├── radau.py          # RadauIIA Generator
     └── multistep.py      # Adams Bashforth and Moulton Generator
 ```
-
-Questions, comments, and constructive criticism are welcome.
